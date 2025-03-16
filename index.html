@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>妈妈生日快乐！</title>
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+  <canvas id="fireworks"></canvas>
+  
+  <div class="container">
+      <h1>❤ 亲爱的妈妈生日快乐！ ❤</h1>
+      
+  	<!-- 图片墙 -->
+  	<div class="photo-wall">
+  		<img src="img/sunflower.jpg" alt="向日葵花朵" onclick="openLightbox(event)">
+  		<img src="img/momHappyBirthday.webp" alt="老妈生日快乐" onclick="openLightbox(event)">
+  		<img src="img/sunflower2.png" alt="4k向日葵" onclick="openLightbox(event)">
+  	</div>
+  
+  	<!-- Lightbox 容器 -->
+  	<div id="lightbox" onclick="closeLightbox()">
+  		<span class="close-btn">&times;</span>
+  		<img id="lightbox-img" src="" alt="放大图片">
+  	</div>
+  
+      <div class="message">
+          <p>🎉 今天是特别的日子——我最爱的妈妈生日！</p>
+          <p>🌹 感谢您多年的辛勤付出与无私关爱</p>
+          <p>🎂 愿岁月温柔以待，健康快乐常伴</p>
+          <p>✨ 每一天都充满阳光与欢笑！</p>
+      </div>
+  
+      <button class="confetti-btn" onclick="startFireworks()">点击放飞祝福</button>
+      
+      <!-- 音乐播放 - 来自网页35/74 -->
+      <audio id="bgm">
+          <source src="audio/happybirthdayaudio.mp3" type="audio/mpeg">
+      </audio>
+  </div>
+</body>
+
+<script type="application/javascript" src="script/main.js"></script>
+
+</html>
